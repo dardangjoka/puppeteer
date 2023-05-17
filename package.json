@@ -1,0 +1,35 @@
+{
+  "name": "BDDTests",
+  "version": "1.0.0",
+  "description": "Puppeteer project with Cucumber.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js -f json:cucumber_report.json",
+    "test:focus": "cucumber-js --tags @focus -f json:cucumber_report.json",
+    "generate:report": "node report.js"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "Puppeteer",
+    "Cucumber"
+  ],
+  "author": "Dardan Gjoka",
+  "license": "ISC",
+  "bugs": {
+    "url": " "
+  },
+  "homepage": "",
+  "dependencies": {
+    "@supercharge/strings": "^1.18.0",
+    "chai": "^4.3.0",
+    "cucumber-html-reporter": "^5.3.0",
+    "puppeteer": "^20.2.1",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.1.2"
+  }
+}
